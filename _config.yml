@@ -1,8 +1,8 @@
 title: Tailwindcss Testing
 email:
 description:
-baseurl: ""
-url: ""
+baseurl: "Tailwindcss-Test"
+url: "https://alliegaytor.github.io/Tailwindcss-Test/"
 
 # Build settings
 plugins:
