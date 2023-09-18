@@ -1,0 +1,33 @@
+title: Tailwindcss Testing
+email:
+description:
+baseurl: ""
+url: ""
+
+# Build settings
+plugins:
+  - jekyll-postcss
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+
+include: ["node_modules/tailwindcss"]
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - postcss.config.js
+  - purgecss.config.js
+  - package*.json
+  - node_modules/

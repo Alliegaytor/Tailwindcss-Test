@@ -1,0 +1,89 @@
+<html lang="en">
+    <head>
+        <title>Tailwindcss Test</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <nav>
+          <div class="flex mx-auto items-center">
+            <img src="img/umbreon.webp" fetchpriority="high" height="70px" width="58px" alt="Navbar icon">
+            <a href="#" class="hover:bg-indigo-500 rounded px-4 mx-2">Alliegaytor</a>
+          </div>
+          <div class="flex mx-auto max-sm:hidden drop-shadow-lg shadow-slate-400">
+            <a href="#" class="hover:bg-blue-400  rounded-sm px-4 mx-2">Info</a>
+            <a href="#" class="hover:bg-green-400 rounded-sm px-4 mx-2">Mods</a>
+            <a href="#" class="hover:bg-red-400 rounded-sm px-4 mx-2">Blog</a>
+          </div>
+          <div class="flex mx-auto">
+            <a href="https://gitlab.com/Alliegaytor" class="hover:bg-gray-400 rounded py-2 px-3">
+              <img src="https://raw.githubusercontent.com/viruzvz/logos-svg/602b4ad99cb0ce876b9b2a6aaca3547011dfc3e4/gitlab.svg" height="48px" width="48px" alt="Gitlab Link">
+            </a>
+            <a href="https://github.com/Alliegaytor" class="hover:bg-gray-400 rounded py-2 px-3">
+              <img src="https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/github-icon.svg" height="48px" width="48px" alt="Github Link">
+            </a>
+          </div>
+          <!-- Mobile menu, show/hide based on menu state. -->
+          <button class="sm:hidden flex items-center text-blue-600 p-3" onclick="toggleMenu();" type="button">
+            <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Mobile menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+          </button>
+          <div class="sm:hidden container px-2 pt-2 pb-3 space-y-1 " id="mobile-menu">
+            <a href="#">Info</a>
+            <a href="#">Mods</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+
+        <article class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 shadow-xl shadow-orange-300">
+            <div class="text-indigo-400 container max-w-lg max-md:mx-auto max-md:text-center">
+                <p class="m-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium">
+                  According to all known laws
+                  of aviation,
+                </p>
+                <p class="text-lg font-normal">
+                  there is no way a bee
+                  should be able to fly.
+                </p>
+                <p class="text-base font-normal">
+                  Its wings are too small to get
+                  its fat little body off the ground.
+                </p>
+                <p class="text-sm font-light">
+                  The bee, of course, flies anyway
+                </p>
+                <p class="text-sm font-extralight">
+                  because bees don't care
+                  what humans think is impossible.
+                </p>
+                <p class="text-xs font-thin">
+                  Yellow, black. Yellow, black.
+                  Yellow, black. Yellow, black.
+                </p>
+              </blockquote>
+              <article class="font-medium">
+                <div class="text-sky-400">
+                  John Human
+                </div>
+                <div class="text-slate-500">
+                  Living Person, Earth
+                </div>
+              </article>
+            </div>
+          </article>
+
+          <!-- Javascript Code -->
+          <script>
+            const menu = document.getElementById('mobile-menu');
+            const toggleMenu = () =>  menu.classList.toggle('hidden');
+          </script>
+    </body>
+</html>
+
