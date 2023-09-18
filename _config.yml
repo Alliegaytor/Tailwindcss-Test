@@ -1,19 +1,17 @@
 title: Tailwindcss Testing
-email:
-description:
+# email:
+# description:
 baseurl: "Tailwindcss-Test"
 url: "https://alliegaytor.github.io/Tailwindcss-Test/"
 
 # Build settings
 plugins:
-  - jekyll-postcss
+  - jekyll-postcss-v2
 
-sass:
-  load_paths:
-    - _sass
-    - node_modules
 
-include: ["node_modules/tailwindcss"]
+postcss:
+  script: node_modules/.bin/postcss
+  config: postcss.config.js
 
 # Exclude from processing.
 exclude:
@@ -23,11 +21,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
   - postcss.config.js
-  - purgecss.config.js
+  - tailwind.config.js
   - package*.json
-  - node_modules/
